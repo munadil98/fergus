@@ -20,7 +20,7 @@ $(document).ready(function(){
 	function getValue(city){
 		// alert(city);
 		$.ajax({
-			url: 'http://api.waqi.info/feed/'+city+'/?token=9cdb54e10df56bfb058e09cf9d83a290520dcdf2',
+			url: 'https://api.waqi.info/feed/'+city+'/?token=9cdb54e10df56bfb058e09cf9d83a290520dcdf2',
 			dataType: 'json',
 			success: function(info){
 				// console.log(info);
