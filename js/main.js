@@ -2,8 +2,19 @@
 
 $(document).ready(function(){
 
+
 var aqi=0;
 	// window.setTimeout(function, milliseconds);
+	$("#enter").keypress(function(){
+
+		$(document).keypress(function(){
+			 var keycode = event.keyCode || event.which;
+    		if(keycode == '13') {
+				location.href='page22.html';
+			}
+		})	
+	})
+
 
 	$("#btn").click(function(){
 		var city_name = $("#cityname").val();
