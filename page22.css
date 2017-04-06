@@ -1,0 +1,182 @@
+body{
+	
+	width: 100%;
+	height: 100vh;
+	max-width: 1440PX;
+	margin: 0 auto;
+	padding: 0;
+
+	font-family: sans-serif;
+	/*border: 2px solid black;*/
+
+}
+
+div	{
+	margin: 0;
+	padding: 0;
+}
+.main{
+		
+	width: 100%;
+	height: 100%;
+
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+.top{
+	background-color: #F0DB5B;
+	height: 40px;
+}
+
+.section1{
+
+	background-color: #E8CD34;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.title {
+	color: #555246;
+}
+.title h1{
+	color: #8ED5B8;
+	
+}
+
+
+.time{
+	color: #F3F3F3;
+    margin-bottom: 24px;
+}
+
+
+
+.progress-bar{
+	background-color: transparent;
+	border-bottom: 1px solid transparent;
+	color: #FFFEFD;  	/*color of percentage number*/
+	left: 50%;
+    transform: translate(-50%);
+
+}
+
+.index{
+	font-size: 14px;
+}
+
+.progress-bar div span{
+    background-color: #E8CD34;      /*color of inner circle fill*/
+    font-size: 60px;
+}
+
+.index {
+    z-index: 100;
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1.1em;
+    /* font-size: .7em; */
+     color: white; 
+}
+
+.condition1 {
+    clear: both;
+    color: #FFFEFD;
+    padding-top: 24px;
+    /*line-height: 48px;*/
+    border-bottom: 2px solid white;
+    width: 34%;
+    margin: 0 auto;
+}
+
+.condition1 h1{
+	margin-bottom: 15px;
+}
+
+.condition2{
+	color: #FFFEFD;
+}
+
+.condition2 h2{
+	margin: 15px 0;
+
+}
+
+.index{
+	display:block;
+		color: #FFFEFD;
+}
+
+.section2{
+	color: #969691;
+	background-color: #EBDD92;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 10px;
+	padding: 20px 0;
+}
+
+.ask h3{
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 1200px){
+	body{
+		font-size: 16px;
+	}	
+}
+
+@media (min-width: 321px) and (max-width: 768px){
+	body{
+		font-size: 14px;
+	}
+
+	.time h1{
+		font-size: 20px;
+	}	
+
+	.ask h3{
+		font-size: 16px;
+	}	
+}
+
+
+@media (max-width: 320px){
+	body{
+		font-size: 13px;
+	}	
+
+		h1{
+		font-size: 22px;
+	}
+
+	.condition1{
+		width: 80%;
+	}
+
+	.time h1{
+		font-size: 20px;
+	}	
+
+	.ask h3{
+		font-size: 16px;
+	}	
+}
