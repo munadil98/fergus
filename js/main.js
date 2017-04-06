@@ -3,21 +3,46 @@
 $(document).ready(function(){
 
 
+$("#find").click(function(){
+
+	$("#userinput").toggle();
+})
+
+// GEo Location Search
+// ======================
+	// $("#enter").geocomplete({
+	//   details: ".geo-details",
+	//   detailsAttribute: "data-geo"
+	// });
+
+
+
+
 var aqi=0;
-	// window.setTimeout(function, milliseconds);
-	$("#enter").keypress(function(){
 
-		$(document).keypress(function(){
-			 var keycode = event.keyCode || event.which;
-    		if(keycode == '13') {
-				location.href='page22.html';
-			}
-		})	
-	})
+	// $("#enter").keypress(function(){
+
+	// 	$(document).keypress(function(){
+	// 		 var keycode = event.keyCode || event.which;
+ //    		if(keycode == '13') {
+	// 			location.href='page22.html';
+	// 		}
+	// 	})	
+	// })
 
 
-	$("#btn").click(function(){
-		var city_name = $("#cityname").val();
+jQuery("#enter").keydown(function (event) {
+    if (event.keyCode == 13) {
+        event.preventDefault();
+
+     	location.href='page22.html';
+//     }
+// });
+
+
+
+	// $("#btn").click(function(){
+		var city_name = $("#enter").val();
 		getValue(city_name);
 		$("#city,#aqi,#idx,#att-url1,#att-name1,#att-url2,#att-name2").css("visibility", "visible");
 
@@ -27,10 +52,14 @@ var aqi=0;
 
 		$(".title_section").css({"background-color":"grey", "opacity":"0.9", "border":"2px solid white"});
 
-	});
+	// });
+
+    }
+});
+
 
 	function getValue(city){
-		// alert(city);
+		alert(city);
 		$.ajax({
 			url: 'http://api.waqi.info/feed/'+city+'/?token=9cdb54e10df56bfb058e09cf9d83a290520dcdf2',
 			dataType: 'json',
