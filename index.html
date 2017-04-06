@@ -10,7 +10,8 @@
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="autocomplete/city-autocomplete.css"> -->
     <link href="style.css" rel="stylesheet">
         <!-- <link href="css/tab.css" rel="stylesheet"> -->
             <!-- <link href="css/mobile.css" rel="stylesheet"> -->
@@ -47,7 +48,8 @@
                 <section class="section2">
 
                         <div class="userinput">
-                            <input id="enter" type="text" name="" placeholder="ENTER CITY">
+                            <input id="enter" type="text" name="" placeholder="ENTER CITY NAME ONLY"  autocomplete="on">
+
                         </div>
 
                 </section>
@@ -64,6 +66,33 @@
 
         <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+<!-- City Autocomplete -->
+<!-- ============================== -->
+
+<!-- <script src="./js/jquery.min.js"></script> -->
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+<script src="geocomplete/js/jquery.geocomplete.min.js"></script>
+
+
+<script type="text/javascript">
+   function initialize() {
+        var options = {
+        types: ['(cities)'],
+        componentRestrictions: {}
+        };
+
+        var input = document.getElementById('enter');
+        var autocomplete = new google.maps.places.Autocomplete(input, options);
+
+   }
+
+   google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
 
         <script src="js/main.js"></script>
     </body>

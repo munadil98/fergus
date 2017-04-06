@@ -42,6 +42,56 @@ h1, h2, h3, h4, h5, h6{
 	background-color: #EBDD92;
 }
 
+.maintop{
+	width: 100%;
+	/*float: right;*/
+}
+.maintop input{
+	/*display: block;*/
+	text-align: center;
+
+	background-color: transparent;
+	width: 100%;
+	/*margin: 0 auto;*/
+	/*width: 480px;*/
+	border: 2px solid transparent;
+	/*border-bottom: 2px solid #32D4E2;*/
+	/*font-weight: 700;*/
+	font-size: 15px;
+	color: #A9A9A9;
+}
+
+.userinput{
+	width: 40%;
+	margin: 0 auto;
+	/*border: 1px solid black;*/
+	display: none;
+}
+
+@media (max-width: 320px){
+	.maintop input{
+		font-size: 9px;
+		width: 100%;
+	}
+}
+.find{
+	
+
+}
+
+#find {
+	float: right;
+	background-color: transparent;
+	border: 1px solid transparent;
+}
+#find:hover{
+	border: 1px solid transparent;	
+}
+
+#find:active{
+	border: 1px solid transparent;	
+}
+
 .main1{
 	background-color: #E8CD34;	
 }
@@ -192,3 +242,19 @@ h1, h2, h3, h4, h5, h6{
 		font-size: 16px;
 	}	
 }
+
+
+.carousel-control {
+
+	opacity: 0;
+}
+
+.carousel-indicators {
+    /*position: absolute;*/
+    bottom: -20px;
+
+    }
+
+    .main3{
+    	height: 100px;
+    }
