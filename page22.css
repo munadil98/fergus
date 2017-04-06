@@ -34,13 +34,25 @@ h1, h2, h3, h4, h5, h6{
 
 
 .top{
-	background-color: #F0DB5B;
+	/*background-color: #F0DB5B;*/
 	height: 40px;
+}
+
+.maintop{
+	background-color: #EBDD92;
+}
+
+.main1{
+	background-color: #E8CD34;	
+}
+
+.main2{
+	background-color: #EBDD92;
 }
 
 .section1{
 
-	background-color: #E8CD34;
+	/*background-color: #E8CD34;*/
 	width: 100%;
 	height: 100%;
 	text-align: center;
@@ -121,7 +133,7 @@ h1, h2, h3, h4, h5, h6{
 
 .section2{
 	color: #969691;
-	background-color: #EBDD92;
+	/*background-color: #EBDD92;*/
 	width: 100%;
 	height: 100%;
 	text-align: center;
