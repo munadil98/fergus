@@ -122,8 +122,8 @@ h1, h2, h3, h4, h5, h6{
 .section2 input{
 
 	background-color: transparent;
-	/*width: 40%;*/
-	width: 480px;
+	width: 50%;
+	/*width: 480px;*/
 	border: 2px solid transparent;
 	border-bottom: 2px solid #32D4E2;
 	font-weight: 700;
@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6{
 	.breezie{
 	    font-size: 20px;
 	    border-radius: 100px;
-	    width: 307px;
+	    width: 275px;
 	    padding: 2px 30px;
 	    margin: 5px auto;
 	    color: black;
@@ -205,6 +205,7 @@ h1, h2, h3, h4, h5, h6{
 
 	.section2 input{
 
+		width: 60%;
 		font-weight: 700;
 		font-size: 25px;
 		color: #A9A9A9;
@@ -224,7 +225,7 @@ h1, h2, h3, h4, h5, h6{
 	.breezie{
 	    font-size: 20px;
 	    border-radius: 100px;
-	    width: 307px;
+	    width: 245px;
 	    padding: 2px 30px;
 	    margin: 5px auto;
 	    color: black;
@@ -285,7 +286,7 @@ h1, h2, h3, h4, h5, h6{
 
 	.section2 input{
 
-		width: 200px;
+		width: 80%;
 		font-weight: 700;
 		font-size: 15px;
 		color: #A9A9A9;
